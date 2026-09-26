@@ -1,187 +1,1246 @@
-! Title: domestic-ad-hosts - AdGuard
-! Description: 国内广告、推广、追踪域名屏蔽
+! Title: insoxin - Global Ads & Tracking Protection
 ! Homepage: https://github.com/insoxin/domestic-ad-hosts
-! Source: hosts
-! Last modified: 2026-09-26
-!
-! Additional confirmed rules
+! Description: Global advertising, tracking, analytics, telemetry and remarketing blocking rules
+! Format: AdGuard
+! ============================================================
+
+
+! ============================================================
+! Google
+! ============================================================
+
+||google-analytics.com^
+||analytics.google.com^
+||googletagmanager.com^
+||googleadservices.com^
+||googlesyndication.com^
+||doubleclick.net^
+||doubleclick.com^
+||g.doubleclick.net^
+||googleads.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||pubads.g.doubleclick.net^
+||ad.doubleclick.net^
+||fls.doubleclick.net^
+||pagead2.googlesyndication.com^
+||ade.googlesyndication.com^
+||adservice.google.com^
+
 ||google.com/rmkt/collect^
-||qualified.com^
-!
-! Converted from hosts
-||cpro.baidu.com^
-||eclick.baidu.com^
-||dsp.simba.baidu.com^
-||pos.baidu.com^
-||union.baidu.com^
-||ad.baidu.com^
-||bdstatic.baidu.com^
+||google.com/ads/ga-audiences^
+||google.com/ccm/collect^
+||google.com/pagead^
+||google.com/pagead/conversion^
+||google.com/pagead/1p-conversion^
+||google.com/pagead/1p-user-list^
+
+
+! ============================================================
+! Meta / Facebook / Instagram
+! ============================================================
+
+||connect.facebook.net^
+||facebook.net^
+||facebook.com/tr^
+||facebook.com/tr/^
+
+||pixel.facebook.com^
+||an.facebook.com^
+||graph.facebook.com^
+||business.facebook.com/tr^
+
+
+! ============================================================
+! Microsoft / Bing / Clarity
+! ============================================================
+
+||bat.bing.com^
+||clarity.ms^
+||c.bing.com^
+||c.clarity.ms^
+||s.clarity.ms^
+
+
+! ============================================================
+! Microsoft Advertising
+! ============================================================
+
+||ads.microsoft.com^
+||bingads.microsoft.com^
+
+
+! ============================================================
+! TikTok
+! ============================================================
+
+||analytics.tiktok.com^
+||ads.tiktok.com^
+||business-api.tiktok.com^
+||analytics-ipv6.tiktok.com^
+||log.byteoversea.com^
+||mon.byteoversea.com^
+
+
+! ============================================================
+! Twitter / X
+! ============================================================
+
+||analytics.twitter.com^
+||ads-twitter.com^
+||ads-api.twitter.com^
+||t.co/i/adsct^
+||twitter.com/i/adsct^
+||x.com/i/adsct^
+
+
+! ============================================================
+! Amazon Advertising
+! ============================================================
+
+||amazon-adsystem.com^
+||aax.amazon-adsystem.com^
+||aax.amazon.com^
+||assoc-amazon.com^
+
+
+! ============================================================
+! Adobe Analytics / Audience Manager
+! ============================================================
+
+||2o7.net^
+||omtrdc.net^
+||demdex.net^
+||adobedtm.com^
+||adobe.io^
+||everesttech.net^
+||everesttech.net^
+||sc.omtrdc.net^
+||dpm.demdex.net^
+
+
+! ============================================================
+! Segment
+! ============================================================
+
+||segment.io^
+||segment.com^
+||api.segment.io^
+||cdn.segment.com^
+||analytics.segment.io^
+||cdn.segment.com^
+
+
+! ============================================================
+! Mixpanel
+! ============================================================
+
+||mixpanel.com^
+||api.mixpanel.com^
+||decide.mixpanel.com^
+||cdn.mxpnl.com^
+
+
+! ============================================================
+! Amplitude
+! ============================================================
+
+||amplitude.com^
+||api.amplitude.com^
+||api2.amplitude.com^
+||api3.amplitude.com^
+||cdn.amplitude.com^
+
+
+! ============================================================
+! Heap
+! ============================================================
+
+||heap.io^
+||heapanalytics.com^
+||cdn.heapanalytics.com^
+
+
+! ============================================================
+! Hotjar
+! ============================================================
+
+||hotjar.com^
+||hotjar.io^
+||static.hotjar.com^
+||script.hotjar.com^
+||insights.hotjar.com^
+
+
+! ============================================================
+! FullStory
+! ============================================================
+
+||fullstory.com^
+||rs.fullstory.com^
+||edge.fullstory.com^
+
+
+! ============================================================
+! Mouseflow
+! ============================================================
+
+||mouseflow.com^
+||cdn.mouseflow.com^
+
+
+! ============================================================
+! Lucky Orange
+! ============================================================
+
+||luckyorange.com^
+||luckyorange.net^
+
+
+! ============================================================
+! Crazy Egg
+! ============================================================
+
+||crazyegg.com^
+||script.crazyegg.com^
+
+
+! ============================================================
+! Clicky
+! ============================================================
+
+||clicky.com^
+||static.getclicky.com^
+||in.getclicky.com^
+
+
+! ============================================================
+! StatCounter
+! ============================================================
+
+||statcounter.com^
+||my.statcounter.com^
+
+
+! ============================================================
+! Chartbeat
+! ============================================================
+
+||chartbeat.com^
+||chartbeat.net^
+||static.chartbeat.com^
+
+
+! ============================================================
+! Quantcast
+! ============================================================
+
+||quantserve.com^
+||quantcast.com^
+||pixel.quantserve.com^
+
+
+! ============================================================
+! Comscore
+! ============================================================
+
+||scorecardresearch.com^
+||b.scorecardresearch.com^
+||sb.scorecardresearch.com^
+
+
+! ============================================================
+! Oracle / BlueKai
+! ============================================================
+
+||bluekai.com^
+||bkrtx.com^
+
+
+! ============================================================
+! Criteo
+! ============================================================
+
+||criteo.com^
+||criteo.net^
+||dis.criteo.com^
+||static.criteo.net^
+
+
+! ============================================================
+! Taboola
+! ============================================================
+
+||taboola.com^
+||trc.taboola.com^
+||cdn.taboola.com^
+
+
+! ============================================================
+! Outbrain
+! ============================================================
+
+||outbrain.com^
+||widgets.outbrain.com^
+||amplify.outbrain.com^
+
+
+! ============================================================
+! AdRoll
+! ============================================================
+
+||adroll.com^
+||d.adroll.com^
+||s.adroll.com^
+
+
+! ============================================================
+! PubMatic
+! ============================================================
+
+||pubmatic.com^
+||pubmatic.net^
+||ads.pubmatic.com^
+
+
+! ============================================================
+! OpenX
+! ============================================================
+
+||openx.net^
+||openx.com^
+
+
+! ============================================================
+! AppNexus / Xandr
+! ============================================================
+
+||adnxs.com^
+||adnxs.net^
+||xandr.com^
+||adnxs-simple.com^
+
+
+! ============================================================
+! Rubicon / Magnite
+! ============================================================
+
+||rubiconproject.com^
+||rubiconproject.net^
+||magnite.com^
+||contextweb.com^
+
+
+! ============================================================
+! MediaMath
+! ============================================================
+
+||mathtag.com^
+||mediamath.com^
+||mathtag.com^
+
+
+! ============================================================
+! Moat
+! ============================================================
+
+||moatads.com^
+||moat.com^
+
+
+! ============================================================
+! DoubleVerify
+! ============================================================
+
+||doubleverify.com^
+||doubleverify.net^
+||pixel.doubleverify.com^
+
+
+! ============================================================
+! Integral Ad Science
+! ============================================================
+
+||adsafeprotected.com^
+||iasds01.com^
+||integralads.com^
+
+
+! ============================================================
+! The Trade Desk
+! ============================================================
+
+||adsrvr.org^
+||thetradedesk.com^
+||3lift.com^
+
+
+! ============================================================
+! Sovrn
+! ============================================================
+
+||lijit.com^
+||sovrn.com^
+
+
+! ============================================================
+! Sharethrough
+! ============================================================
+
+||sharethrough.com^
+
+
+! ============================================================
+! TripleLift
+! ============================================================
+
+||triplelift.com^
+
+
+! ============================================================
+! Yieldmo
+! ============================================================
+
+||yieldmo.com^
+
+
+! ============================================================
+! Index Exchange
+! ============================================================
+
+||indexexchange.com^
+||casalemedia.com^
+
+
+! ============================================================
+! Sonobi
+! ============================================================
+
+||sonobi.com^
+
+
+! ============================================================
+! SpotX / Magnite
+! ============================================================
+
+||spotxchange.com^
+
+
+! ============================================================
+! Teads
+! ============================================================
+
+||teads.tv^
+||teads.com^
+
+
+! ============================================================
+! InMobi
+! ============================================================
+
+||inmobi.com^
+||inmobicdn.net^
+
+
+! ============================================================
+! AppLovin
+! ============================================================
+
+||applovin.com^
+||applvn.com^
+||applovin-sdk.com^
+
+
+! ============================================================
+! Unity Ads
+! ============================================================
+
+||unityads.unity3d.com^
+||unityads.com^
+||ads.unity.com^
+
+
+! ============================================================
+! IronSource
+! ============================================================
+
+||ironsrc.com^
+||supersonicads.com^
+
+
+! ============================================================
+! Vungle
+! ============================================================
+
+||vungle.com^
+
+
+! ============================================================
+! Fyber
+! ============================================================
+
+||fyber.com^
+||fyberedge.com^
+
+
+! ============================================================
+! Tapjoy
+! ============================================================
+
+||tapjoy.com^
+
+
+! ============================================================
+! Digital Turbine
+! ============================================================
+
+||digitalturbine.com^
+||fyber.com^
+
+
+! ============================================================
+! Adjust
+! ============================================================
+
+||adjust.com^
+||app.adjust.com^
+||app.adjust.io^
+
+
+! ============================================================
+! AppsFlyer
+! ============================================================
+
+||appsflyer.com^
+||appsflyersdk.com^
+||attr.appsflyer.com^
+
+
+! ============================================================
+! Branch
+! ============================================================
+
+||branch.io^
+||api.branch.io^
+
+
+! ============================================================
+! Kochava
+! ============================================================
+
+||kochava.com^
+||control.kochava.com^
+
+
+! ============================================================
+! Singular
+! ============================================================
+
+||singular.net^
+||s2s.singular.net^
+
+
+! ============================================================
+! Firebase Analytics
+! ============================================================
+
+||app-measurement.com^
+||firebaseinstallations.googleapis.com^
+||firebaselogging.googleapis.com^
+
+
+! ============================================================
+! Sentry telemetry
+! ============================================================
+
+||sentry.io^
+||browser.sentry-cdn.com^
+||ingest.sentry.io^
+
+
+! ============================================================
+! New Relic
+! ============================================================
+
+||newrelic.com^
+||bam.nr-data.net^
+||js-agent.newrelic.com^
+||bam-cell.nr-data.net^
+
+
+! ============================================================
+! Datadog
+! ============================================================
+
+||datadoghq.com^
+||browser-intake-datadoghq.com^
+||rum.browser-intake-datadoghq.com^
+
+
+! ============================================================
+! LogRocket
+! ============================================================
+
+||logrocket.com^
+||cdn.logrocket.io^
+||r.lr-ingest.io^
+
+
+! ============================================================
+! Smartlook
+! ============================================================
+
+||smartlook.com^
+||rec.smartlook.com^
+
+
+! ============================================================
+! Pendo
+! ============================================================
+
+||pendo.io^
+||pendo-static-1092904883.storage.googleapis.com^
+
+
+! ============================================================
+! Intercom tracking
+! ============================================================
+
+||intercom.io^
+||intercomcdn.com^
+
+
+! ============================================================
+! Drift
+! ============================================================
+
+||drift.com^
+||driftcdn.com^
+
+
+! ============================================================
+! HubSpot tracking
+! ============================================================
+
+||hubspot.com^
+||hubspot.net^
+||hs-analytics.net^
+||hs-banner.com^
+||hs-scripts.com^
+||track.hubspot.com^
+
+
+! ============================================================
+! Marketo
+! ============================================================
+
+||marketo.com^
+||mktoresp.com^
+
+
+! ============================================================
+! Salesforce Marketing Cloud
+! ============================================================
+
+||exacttarget.com^
+||marketingcloudapis.com^
+||krxd.net^
+
+
+! ============================================================
+! Tealium
+! ============================================================
+
+||tealiumiq.com^
+||tealium.com^
+||tags.tiqcdn.com^
+
+
+! ============================================================
+! Ensighten
+! ============================================================
+
+||ensighten.com^
+||ensighten.net^
+
+
+! ============================================================
+! Snowplow
+! ============================================================
+
+||snowplowanalytics.com^
+
+
+! ============================================================
+! Matomo
+! ============================================================
+
+||matomo.cloud^
+
+
+! ============================================================
+! Webtrends
+! ============================================================
+
+||webtrends.com^
+||webtrendslive.com^
+
+
+! ============================================================
+! AT Internet / Piano Analytics
+! ============================================================
+
+||atinternet.com^
+||piano.io^
+
+
+! ============================================================
+! Contentsquare
+! ============================================================
+
+||contentsquare.com^
+||contentsquare.net^
+
+
+! ============================================================
+! Decibel
+! ============================================================
+
+||decibelinsight.com^
+
+
+! ============================================================
+! SessionCam
+! ============================================================
+
+||sessioncam.com^
+
+
+! ============================================================
+! UserReplay
+! ============================================================
+
+||userreplay.com^
+
+
+! ============================================================
+! MouseStats
+! ============================================================
+
+||mousestats.com^
+
+
+! ============================================================
+! VWO
+! ============================================================
+
+||visualwebsiteoptimizer.com^
+||vwo.com^
+
+
+! ============================================================
+! Optimizely
+! ============================================================
+
+||optimizely.com^
+||cdn.optimizely.com^
+
+
+! ============================================================
+! AB Tasty
+! ============================================================
+
+||abtasty.com^
+
+
+! ============================================================
+! Convert
+! ============================================================
+
+||convert.com^
+||convertkit.com^
+
+
+! ============================================================
+! Freshworks / Freshmarketer
+! ============================================================
+
+||freshmarketer.com^
+||freshworks.com^
+
+
+! ============================================================
+! Zoho Analytics / Marketing
+! ============================================================
+
+||zohopublic.com^
+||zoho.com^
+
+
+! ============================================================
+! Yandex tracking
+! ============================================================
+
+||mc.yandex.ru^
+||yandexadexchange.net^
+||an.yandex.ru^
+
+
+! ============================================================
+! VK tracking
+! ============================================================
+
+||vk.com/rtrg^
+||vk.com/ads^
+||top-fwz1.mail.ru^
+
+
+! ============================================================
+! Mail.ru tracking
+! ============================================================
+
+||top-fwz1.mail.ru^
+||top-fwz1.mail.ru/cgi-bin^
+
+
+! ============================================================
+! LinkedIn tracking
+! ============================================================
+
+||snap.licdn.com^
+||ads.linkedin.com^
+||px.ads.linkedin.com^
+
+
+! ============================================================
+! Pinterest tracking
+! ============================================================
+
+||ct.pinterest.com^
+||log.pinterest.com^
+||ads.pinterest.com^
+
+
+! ============================================================
+! Snapchat tracking
+! ============================================================
+
+||tr.snapchat.com^
+||sc-static.net^
+||snapads.com^
+
+
+! ============================================================
+! Reddit tracking
+! ============================================================
+
+||events.reddit.com^
+||events.redditmedia.com^
+||alb.reddit.com^
+
+
+! ============================================================
+! Quora tracking
+! ============================================================
+
+||pixel.quora.com^
+||q.quora.com^
+
+
+! ============================================================
+! Spotify advertising
+! ============================================================
+
+||ads.spotify.com^
+||analytics.spotify.com^
+
+
+! ============================================================
+! Verizon / AOL / Yahoo advertising
+! ============================================================
+
+||ads.yahoo.com^
+||analytics.yahoo.com^
+||geo.yahoo.com^
+||advertising.com^
+||atwola.com^
+||yimg.com^/beacon^
+
+
+! ============================================================
+! AOL tracking
+! ============================================================
+
+||aol.com/track^
+
+
+! ============================================================
+! Verizon Media
+! ============================================================
+
+||yldbt.com^
+||yahoo.com/ads^
+
+
+! ============================================================
+! GumGum
+! ============================================================
+
+||gumgum.com^
+
+
+! ============================================================
+! ShareASale
+! ============================================================
+
+||shareasale.com^
+
+
+! ============================================================
+! Impact
+! ============================================================
+
+||impact.com^
+||impactradius.com^
+
+
+! ============================================================
+! Rakuten advertising
+! ============================================================
+
+||rakuten.com^/tracking^
+||rakutenadvertising.com^
+||linksynergy.com^
+
+
+! ============================================================
+! CJ Affiliate
+! ============================================================
+
+||cj.com^
+||anrdoezrs.net^
+||dpbolvw.net^
+||emjcd.com^
+||jdoqocy.com^
+||kqzyfj.com^
+
+
+! ============================================================
+! Awin
+! ============================================================
+
+||awin1.com^
+||awin.com^
+
+
+! ============================================================
+! Webgains
+! ============================================================
+
+||webgains.com^
+
+
+! ============================================================
+! Pepperjam / Ascend
+! ============================================================
+
+||pepperjam.com^
+
+
+! ============================================================
+! Fingerprinting
+! ============================================================
+
+||fingerprint.com^
+||fpjs.io^
+||fingerprintjs.com^
+
+
+! ============================================================
+! Tracking pixels / beacons
+! ============================================================
+
+||pixeltracking.com^
+||trackingpixel.com^
+||beaconads.com^
+
+
+! ============================================================
+! Common tracking / analytics infrastructure
+! ============================================================
+
+||trackcmp.net^
+||tracking-protection.cdn.mozilla.net^
+||trackjs.com^
+||analyticsedge.com^
+
+
+! ============================================================
+! Push / Web notification advertising
+! ============================================================
+
+||pushpush.net^
+||pushwoosh.com^
+||onesignal.com^
+||onesignal.org^
+
+
+! ============================================================
+! OneSignal analytics
+! ============================================================
+
+||api.onesignal.com^
+||app.onesignal.com^
+
+
+! ============================================================
+! Customer.io
+! ============================================================
+
+||customer.io^
+
+
+! ============================================================
+! Braze
+! ============================================================
+
+||braze.com^
+||appboy.com^
+
+
+! ============================================================
+! Iterable
+! ============================================================
+
+||iterable.com^
+
+
+! ============================================================
+! Klaviyo
+! ============================================================
+
+||klaviyo.com^
+
+
+! ============================================================
+! Amplitude / Analytics SDK
+! ============================================================
+
+||analytics.amplitude.com^
+
+
+! ============================================================
+! Google / Firebase telemetry
+! ============================================================
+
+||crashlytics.com^
+||firebase-crashlytics.com^
+||firebaseinstallations.googleapis.com^
+
+
+! ============================================================
+! Mobile analytics
+! ============================================================
+
+||umeng.com^
+||umengcloud.com^
+||applog.uc.cn^
+||alog.umeng.com^
+
+
+! ============================================================
+! Huawei analytics
+! ============================================================
+
+||hicloud.com^/analytics^
+||metrics.data.hicloud.com^
+
+
+! ============================================================
+! Xiaomi analytics
+! ============================================================
+
+||data.mistat.xiaomi.com^
+||tracking.miui.com^
+||log.avlyun.com^
+
+
+! ============================================================
+! OPPO analytics
+! ============================================================
+
+||adsfs.oppomobile.com^
+||data.ads.oppomobile.com^
+
+
+! ============================================================
+! Vivo analytics
+! ============================================================
+
+||metrics.vivo.com.cn^
+
+
+! ============================================================
+! Baidu tracking
+! ============================================================
+
 ||hm.baidu.com^
-||spcode.baidu.com^
-||u.baidu.com^
-||du.baidu.com^
-||analytics.baidu.com^
-||log.baidu.com^
-||trace.baidu.com^
-||track.baidu.com^
-||p.alimama.com^
-||ad.alimama.com^
-||union.alimama.com^
-||cdn.alimama.com^
-||ad.taobao.com^
-||ad.tmall.com^
-||track.taobao.com^
-||log.taobao.com^
-||analytics.taobao.com^
-||ad.1688.com^
-||ad.aliyun.com^
-||ad.aliyuncs.com^
-||ads.qq.com^
-||adsview.qq.com^
-||adsclick.qq.com^
-||adsfile.qq.com^
+||cnzz.com^
+||tongji.baidu.com^
+||cpro.baidu.com^
+||pos.baidu.com^
+
+
+! ============================================================
+! Tencent advertising / analytics
+! ============================================================
+
+||pingjs.qq.com^
+||tcss.qq.com^
+||qzs.qq.com^
+||btrace.qq.com^
+||beacon.qq.com^
 ||ad.qq.com^
-||ad.tencent.com^
-||ad.weixin.qq.com^
-||ad.qqbrowser.com^
-||track.qq.com^
-||stat.qq.com^
-||log.qq.com^
-||analytics.qq.com^
-||ad.video.qq.com^
-||ad.news.qq.com^
-||ad.sports.qq.com^
-||ad.ent.qq.com^
-||ad.bytedance.com^
-||ad.toutiao.com^
-||ad.douyin.com^
-||ad.ixigua.com^
-||ad.pipixia.com^
-||ad.tiktok.com^
-||track.bytedance.com^
-||log.bytedance.com^
-||analytics.bytedance.com^
-||ad.sina.com.cn^
-||ad.weibo.com^
-||ad.news.sina.com.cn^
-||ad.finance.sina.com.cn^
-||ad.sports.sina.com.cn^
-||ad.ent.sina.com.cn^
-||track.sina.com.cn^
-||log.sina.com.cn^
-||analytics.sina.com.cn^
-||adnet.sohu.com^
-||ad.sohu.com^
-||ad.news.sohu.com^
-||ad.video.sohu.com^
-||ad.sports.sohu.com^
-||ad.ent.sohu.com^
-||track.sohu.com^
-||log.sohu.com^
-||analytics.sohu.com^
-||ad.163.com^
-||ad.news.163.com^
-||ad.music.163.com^
-||ad.video.163.com^
-||ad.ent.163.com^
-||track.163.com^
-||log.163.com^
-||analytics.163.com^
-||ad.iqiyi.com^
-||ad.video.iqiyi.com^
-||ad.movie.iqiyi.com^
-||ad.tv.iqiyi.com^
-||ad.show.iqiyi.com^
-||track.iqiyi.com^
-||log.iqiyi.com^
-||analytics.iqiyi.com^
-||atm.youku.com^
-||fvid.atm.youku.com^
-||html.atm.youku.com^
-||valb.atm.youku.com^
-||valf.atm.youku.com^
-||valo.atm.youku.com^
-||valp.atm.youku.com^
-||lstat.youku.com^
-||speed.lstat.youku.com^
-||urchin.lstat.youku.com^
-||stat.youku.com^
-||static.lstat.youku.com^
-||valc.atm.youku.com^
-||vid.atm.youku.com^
-||walp.atm.youku.com^
-||td.atm.youku.com^
-||ad.v.qq.com^
-||ad.movie.qq.com^
-||ad.tv.qq.com^
-||ad.show.qq.com^
-||track.v.qq.com^
-||log.v.qq.com^
-||analytics.v.qq.com^
-||ad.mgtv.com^
-||ad.video.mgtv.com^
-||ad.movie.mgtv.com^
-||ad.tv.mgtv.com^
-||ad.show.mgtv.com^
-||track.mgtv.com^
-||log.mgtv.com^
-||analytics.mgtv.com^
-||ad.bilibili.com^
-||ad.video.bilibili.com^
-||ad.movie.bilibili.com^
-||ad.tv.bilibili.com^
-||ad.show.bilibili.com^
-||track.bilibili.com^
-||log.bilibili.com^
-||analytics.bilibili.com^
-||cpc.sogou.com^
-||ad.sogou.com^
-||ad.search.sogou.com^
-||ad.news.sogou.com^
-||ad.video.sogou.com^
-||track.sogou.com^
-||log.sogou.com^
-||analytics.sogou.com^
-||ad.360.cn^
-||ad.360.com^
-||ad.so.com^
-||ad.news.360.cn^
-||ad.video.360.cn^
-||track.360.cn^
-||log.360.cn^
-||analytics.360.cn^
-||union.mop.com^
-||adv.imhb.cn^
-||ad.greedland.net^
-||ad1.greedland.net^
-||links.panr.com^
-||dds.sogua.com^
-||show.sogua.com^
-||unionch.qyule.com^
-||union.link7.cn^
-||code.51sotu.com^
-||ad.363.in^
-||a.779.net^
-||ad.allyes.com^
-||focusbaiduafp.allyes.com^
-||acs.56.com^
-||acs.agent.56.com^
-||amob.acs86.com^
-||static.acs86.com^
-||aggregate.renren.com^
-||interval.adbc.renren.com^
-||wall.adbc.renren.com^
-||www.admarket.mobi^
-||ad.veegao.com^
-||sdk.yijifen.com^
-||res.yijifen.com^
-||ads.mobclix.com^
-||api.airpush.com^
-||ad.leadboltapps.net^
-||ad.leadbolt.net^
-||media.mydas.mobi^
-||lp.mydas.mobi^
-||adsmind.net^
-||pagead.qhupdate.com^
-||stat.e.qq.com^
-||ads.qqbrowser.com^
+||gdt.qq.com^
+||tangram.e.qq.com^
+
+
+! ============================================================
+! Alibaba tracking
+! ============================================================
+
+||cnzz.com^
+||umeng.com^
+||mmstat.com^
+||atpanel.com^
+||log.mmstat.com^
+||fourier.taobao.com^
+
+
+! ============================================================
+! Taobao / Tmall tracking
+! ============================================================
+
+||gm.mmstat.com^
+||log.mmstat.com^
+||wgo.mmstat.com^
+
+
+! ============================================================
+! JD tracking
+! ============================================================
+
+||log.jd.com^
+||ads-union.jd.com^
+||c-nfa.jd.com^
+
+
+! ============================================================
+! ByteDance / Volcano
+! ============================================================
+
+||byteimg.com^/track^
+||toutiao.com/track^
+||pangolin-sdk-toutiao.com^
+||pangolin.snssdk.com^
+
+
+! ============================================================
+! Huawei Ads
+! ============================================================
+
+||ads-drcn.platform.hicloud.com^
+||metrics1.data.hicloud.com^
+
+
+! ============================================================
+! Ad networks / generic
+! ============================================================
+
+||adskeeper.com^
+||adkernel.com^
+||adform.net^
+||adform.com^
+||adnxs.com^
+||bidvertiser.com^
+||bidmachine.io^
+||bidswitch.net^
+||casalemedia.com^
+||contextweb.com^
+||conversantmedia.com^
+||criteo.net^
+||districtm.io^
+||epom.com^
+||exoclick.com^
+||gumgum.com^
+||infolinks.com^
+||lijit.com^
+||medianet.com^
+||mgid.com^
+||nativo.com^
+||netrefer.com^
+||openx.net^
+||popads.net^
+||propellerads.com^
+||revcontent.com^
+||revjet.com^
+||sekindo.com^
+||smartadserver.com^
+||smaato.net^
+||smaato.com^
+||startapp.com^
+||trafficjunky.com^
+||undertone.com^
+||yieldmo.com^
+
+
+! ============================================================
+! Common tracking parameters
+! AdGuard supports $removeparam for URL query parameters.
+! ============================================================
+
+$removeparam=utm_source
+$removeparam=utm_medium
+$removeparam=utm_campaign
+$removeparam=utm_term
+$removeparam=utm_content
+$removeparam=utm_name
+$removeparam=utm_cid
+$removeparam=utm_reader
+$removeparam=utm_referrer
+$removeparam=utm_social
+$removeparam=utm_social-type
+$removeparam=utm_brand
+$removeparam=utm_marketing_tactic
+
+$removeparam=gclid
+$removeparam=dclid
+$removeparam=gbraid
+$removeparam=wbraid
+$removeparam=fbclid
+$removeparam=msclkid
+$removeparam=ttclid
+$removeparam=twclid
+$removeparam=li_fat_id
+$removeparam=mc_cid
+$removeparam=mc_eid
+$removeparam=yclid
+$removeparam=ymclid
+$removeparam=epik
+$removeparam=igshid
+$removeparam=vero_id
+$removeparam=oly_anon_id
+$removeparam=oly_enc_id
+$removeparam=_hsenc
+$removeparam=_hsmi
+$removeparam=hsa_cam
+$removeparam=hsa_grp
+$removeparam=hsa_mt
+$removeparam=hsa_src
+$removeparam=hsa_ad
+$removeparam=hsa_acc
+$removeparam=hsa_net
+$removeparam=hsa_kw
+$removeparam=hsa_ver
+$removeparam=hsa_la
+$removeparam=hsa_ol
+$removeparam=ref_
