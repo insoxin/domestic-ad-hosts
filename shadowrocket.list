@@ -1,0 +1,900 @@
+# Title: insoxin - Global Ads & Tracking Protection
+# Homepage: https://github.com/insoxin/domestic-ad-hosts
+# Description: Global advertising, tracking, analytics, telemetry and remarketing
+# Format: Shadowrocket
+# ============================================================
+
+
+# ============================================================
+# Google
+# ============================================================
+
+DOMAIN-SUFFIX,google-analytics.com,REJECT
+DOMAIN-SUFFIX,analytics.google.com,REJECT
+DOMAIN-SUFFIX,googletagmanager.com,REJECT
+DOMAIN-SUFFIX,googleadservices.com,REJECT
+DOMAIN-SUFFIX,googlesyndication.com,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-SUFFIX,doubleclick.com,REJECT
+DOMAIN-SUFFIX,g.doubleclick.net,REJECT
+DOMAIN-SUFFIX,googleads.g.doubleclick.net,REJECT
+DOMAIN-SUFFIX,securepubads.g.doubleclick.net,REJECT
+DOMAIN-SUFFIX,pubads.g.doubleclick.net,REJECT
+DOMAIN-SUFFIX,ad.doubleclick.net,REJECT
+DOMAIN-SUFFIX,fls.doubleclick.net,REJECT
+DOMAIN-SUFFIX,pagead2.googlesyndication.com,REJECT
+DOMAIN-SUFFIX,ade.googlesyndication.com,REJECT
+DOMAIN,adservice.google.com,REJECT
+
+URL-REGEX,^https?:\/\/(www\.)?google\.com\/rmkt\/collect(?:\/|$),REJECT
+URL-REGEX,^https?:\/\/(www\.)?google\.com\/ads\/ga-audiences(?:\/|$),REJECT
+URL-REGEX,^https?:\/\/(www\.)?google\.com\/ccm\/collect(?:\/|$),REJECT
+URL-REGEX,^https?:\/\/(www\.)?google\.com\/pagead(?:\/|$),REJECT
+
+
+# ============================================================
+# Meta / Facebook
+# ============================================================
+
+DOMAIN-SUFFIX,connect.facebook.net,REJECT
+DOMAIN-SUFFIX,facebook.net,REJECT
+DOMAIN,pixel.facebook.com,REJECT
+DOMAIN,an.facebook.com,REJECT
+DOMAIN,graph.facebook.com,REJECT
+DOMAIN,business.facebook.com,REJECT
+
+URL-REGEX,^https?:\/\/([^\/]+\.)?facebook\.com\/tr(?:\/|\?),REJECT
+
+
+# ============================================================
+# Microsoft / Bing / Clarity
+# ============================================================
+
+DOMAIN,bat.bing.com,REJECT
+DOMAIN-SUFFIX,clarity.ms,REJECT
+DOMAIN,c.bing.com,REJECT
+DOMAIN,c.clarity.ms,REJECT
+DOMAIN,s.clarity.ms,REJECT
+DOMAIN-SUFFIX,ads.microsoft.com,REJECT
+
+
+# ============================================================
+# TikTok
+# ============================================================
+
+DOMAIN-SUFFIX,analytics.tiktok.com,REJECT
+DOMAIN-SUFFIX,ads.tiktok.com,REJECT
+DOMAIN-SUFFIX,business-api.tiktok.com,REJECT
+DOMAIN,analytics-ipv6.tiktok.com,REJECT
+DOMAIN,log.byteoversea.com,REJECT
+DOMAIN,mon.byteoversea.com,REJECT
+
+
+# ============================================================
+# Twitter / X
+# ============================================================
+
+DOMAIN,analytics.twitter.com,REJECT
+DOMAIN-SUFFIX,ads-twitter.com,REJECT
+DOMAIN,ads-api.twitter.com,REJECT
+
+URL-REGEX,^https?:\/\/(www\.)?(twitter|x)\.com\/i\/adsct(?:\/|\?),REJECT
+URL-REGEX,^https?:\/\/t\.co\/i\/adsct(?:\/|\?),REJECT
+
+
+# ============================================================
+# Amazon Advertising
+# ============================================================
+
+DOMAIN-SUFFIX,amazon-adsystem.com,REJECT
+DOMAIN,aax.amazon-adsystem.com,REJECT
+DOMAIN,aax.amazon.com,REJECT
+DOMAIN-SUFFIX,assoc-amazon.com,REJECT
+
+
+# ============================================================
+# Adobe
+# ============================================================
+
+DOMAIN-SUFFIX,2o7.net,REJECT
+DOMAIN-SUFFIX,omtrdc.net,REJECT
+DOMAIN-SUFFIX,demdex.net,REJECT
+DOMAIN-SUFFIX,adobedtm.com,REJECT
+DOMAIN-SUFFIX,everesttech.net,REJECT
+DOMAIN,sc.omtrdc.net,REJECT
+DOMAIN,dpm.demdex.net,REJECT
+
+
+# ============================================================
+# Segment
+# ============================================================
+
+DOMAIN-SUFFIX,segment.io,REJECT
+DOMAIN-SUFFIX,segment.com,REJECT
+DOMAIN,api.segment.io,REJECT
+DOMAIN,cdn.segment.com,REJECT
+DOMAIN,analytics.segment.io,REJECT
+
+
+# ============================================================
+# Mixpanel
+# ============================================================
+
+DOMAIN-SUFFIX,mixpanel.com,REJECT
+DOMAIN,api.mixpanel.com,REJECT
+DOMAIN,decide.mixpanel.com,REJECT
+DOMAIN,cdn.mxpnl.com,REJECT
+
+
+# ============================================================
+# Amplitude
+# ============================================================
+
+DOMAIN-SUFFIX,amplitude.com,REJECT
+DOMAIN,api.amplitude.com,REJECT
+DOMAIN,api2.amplitude.com,REJECT
+DOMAIN,api3.amplitude.com,REJECT
+DOMAIN,cdn.amplitude.com,REJECT
+
+
+# ============================================================
+# Heap
+# ============================================================
+
+DOMAIN-SUFFIX,heap.io,REJECT
+DOMAIN-SUFFIX,heapanalytics.com,REJECT
+DOMAIN,cdn.heapanalytics.com,REJECT
+
+
+# ============================================================
+# Hotjar
+# ============================================================
+
+DOMAIN-SUFFIX,hotjar.com,REJECT
+DOMAIN-SUFFIX,hotjar.io,REJECT
+DOMAIN,static.hotjar.com,REJECT
+DOMAIN,script.hotjar.com,REJECT
+DOMAIN,insights.hotjar.com,REJECT
+
+
+# ============================================================
+# FullStory
+# ============================================================
+
+DOMAIN-SUFFIX,fullstory.com,REJECT
+DOMAIN,rs.fullstory.com,REJECT
+DOMAIN,edge.fullstory.com,REJECT
+
+
+# ============================================================
+# Mouseflow
+# ============================================================
+
+DOMAIN-SUFFIX,mouseflow.com,REJECT
+DOMAIN,cdn.mouseflow.com,REJECT
+
+
+# ============================================================
+# Lucky Orange
+# ============================================================
+
+DOMAIN-SUFFIX,luckyorange.com,REJECT
+DOMAIN-SUFFIX,luckyorange.net,REJECT
+
+
+# ============================================================
+# Crazy Egg
+# ============================================================
+
+DOMAIN-SUFFIX,crazyegg.com,REJECT
+DOMAIN,script.crazyegg.com,REJECT
+
+
+# ============================================================
+# Clicky
+# ============================================================
+
+DOMAIN-SUFFIX,clicky.com,REJECT
+DOMAIN,static.getclicky.com,REJECT
+DOMAIN,in.getclicky.com,REJECT
+
+
+# ============================================================
+# StatCounter
+# ============================================================
+
+DOMAIN-SUFFIX,statcounter.com,REJECT
+DOMAIN,my.statcounter.com,REJECT
+
+
+# ============================================================
+# Chartbeat
+# ============================================================
+
+DOMAIN-SUFFIX,chartbeat.com,REJECT
+DOMAIN-SUFFIX,chartbeat.net,REJECT
+DOMAIN,static.chartbeat.com,REJECT
+
+
+# ============================================================
+# Quantcast
+# ============================================================
+
+DOMAIN-SUFFIX,quantserve.com,REJECT
+DOMAIN-SUFFIX,quantcast.com,REJECT
+DOMAIN,pixel.quantserve.com,REJECT
+
+
+# ============================================================
+# Comscore
+# ============================================================
+
+DOMAIN-SUFFIX,scorecardresearch.com,REJECT
+DOMAIN,b.scorecardresearch.com,REJECT
+DOMAIN,sb.scorecardresearch.com,REJECT
+
+
+# ============================================================
+# Oracle / BlueKai
+# ============================================================
+
+DOMAIN-SUFFIX,bluekai.com,REJECT
+DOMAIN-SUFFIX,bkrtx.com,REJECT
+
+
+# ============================================================
+# Criteo
+# ============================================================
+
+DOMAIN-SUFFIX,criteo.com,REJECT
+DOMAIN-SUFFIX,criteo.net,REJECT
+DOMAIN,dis.criteo.com,REJECT
+DOMAIN,static.criteo.net,REJECT
+
+
+# ============================================================
+# Taboola
+# ============================================================
+
+DOMAIN-SUFFIX,taboola.com,REJECT
+DOMAIN,trc.taboola.com,REJECT
+DOMAIN,cdn.taboola.com,REJECT
+
+
+# ============================================================
+# Outbrain
+# ============================================================
+
+DOMAIN-SUFFIX,outbrain.com,REJECT
+DOMAIN,widgets.outbrain.com,REJECT
+DOMAIN,amplify.outbrain.com,REJECT
+
+
+# ============================================================
+# AdRoll
+# ============================================================
+
+DOMAIN-SUFFIX,adroll.com,REJECT
+DOMAIN,d.adroll.com,REJECT
+DOMAIN,s.adroll.com,REJECT
+
+
+# ============================================================
+# PubMatic
+# ============================================================
+
+DOMAIN-SUFFIX,pubmatic.com,REJECT
+DOMAIN-SUFFIX,pubmatic.net,REJECT
+DOMAIN,ads.pubmatic.com,REJECT
+
+
+# ============================================================
+# OpenX
+# ============================================================
+
+DOMAIN-SUFFIX,openx.net,REJECT
+DOMAIN-SUFFIX,openx.com,REJECT
+
+
+# ============================================================
+# AppNexus / Xandr
+# ============================================================
+
+DOMAIN-SUFFIX,adnxs.com,REJECT
+DOMAIN-SUFFIX,adnxs.net,REJECT
+DOMAIN-SUFFIX,xandr.com,REJECT
+DOMAIN-SUFFIX,adnxs-simple.com,REJECT
+
+
+# ============================================================
+# Rubicon / Magnite
+# ============================================================
+
+DOMAIN-SUFFIX,rubiconproject.com,REJECT
+DOMAIN-SUFFIX,rubiconproject.net,REJECT
+DOMAIN-SUFFIX,magnite.com,REJECT
+DOMAIN-SUFFIX,contextweb.com,REJECT
+
+
+# ============================================================
+# MediaMath
+# ============================================================
+
+DOMAIN-SUFFIX,mathtag.com,REJECT
+DOMAIN-SUFFIX,mediamath.com,REJECT
+
+
+# ============================================================
+# Moat
+# ============================================================
+
+DOMAIN-SUFFIX,moatads.com,REJECT
+DOMAIN-SUFFIX,moat.com,REJECT
+
+
+# ============================================================
+# DoubleVerify
+# ============================================================
+
+DOMAIN-SUFFIX,doubleverify.com,REJECT
+DOMAIN-SUFFIX,doubleverify.net,REJECT
+DOMAIN,pixel.doubleverify.com,REJECT
+
+
+# ============================================================
+# Integral Ad Science
+# ============================================================
+
+DOMAIN-SUFFIX,adsafeprotected.com,REJECT
+DOMAIN-SUFFIX,iasds01.com,REJECT
+DOMAIN-SUFFIX,integralads.com,REJECT
+
+
+# ============================================================
+# The Trade Desk
+# ============================================================
+
+DOMAIN-SUFFIX,adsrvr.org,REJECT
+DOMAIN-SUFFIX,thetradedesk.com,REJECT
+DOMAIN-SUFFIX,3lift.com,REJECT
+
+
+# ============================================================
+# Sovrn
+# ============================================================
+
+DOMAIN-SUFFIX,lijit.com,REJECT
+DOMAIN-SUFFIX,sovrn.com,REJECT
+
+
+# ============================================================
+# Sharethrough
+# ============================================================
+
+DOMAIN-SUFFIX,sharethrough.com,REJECT
+
+
+# ============================================================
+# TripleLift
+# ============================================================
+
+DOMAIN-SUFFIX,triplelift.com,REJECT
+
+
+# ============================================================
+# Yieldmo
+# ============================================================
+
+DOMAIN-SUFFIX,yieldmo.com,REJECT
+
+
+# ============================================================
+# Index Exchange
+# ============================================================
+
+DOMAIN-SUFFIX,indexexchange.com,REJECT
+DOMAIN-SUFFIX,casalemedia.com,REJECT
+
+
+# ============================================================
+# Sonobi
+# ============================================================
+
+DOMAIN-SUFFIX,sonobi.com,REJECT
+
+
+# ============================================================
+# Teads
+# ============================================================
+
+DOMAIN-SUFFIX,teads.tv,REJECT
+DOMAIN-SUFFIX,teads.com,REJECT
+
+
+# ============================================================
+# InMobi
+# ============================================================
+
+DOMAIN-SUFFIX,inmobi.com,REJECT
+DOMAIN-SUFFIX,inmobicdn.net,REJECT
+
+
+# ============================================================
+# AppLovin
+# ============================================================
+
+DOMAIN-SUFFIX,applovin.com,REJECT
+DOMAIN-SUFFIX,applvn.com,REJECT
+DOMAIN-SUFFIX,applovin-sdk.com,REJECT
+
+
+# ============================================================
+# Unity Ads
+# ============================================================
+
+DOMAIN,unityads.unity3d.com,REJECT
+DOMAIN-SUFFIX,unityads.com,REJECT
+DOMAIN-SUFFIX,ads.unity.com,REJECT
+
+
+# ============================================================
+# IronSource
+# ============================================================
+
+DOMAIN-SUFFIX,ironsrc.com,REJECT
+DOMAIN-SUFFIX,supersonicads.com,REJECT
+
+
+# ============================================================
+# Vungle
+# ============================================================
+
+DOMAIN-SUFFIX,vungle.com,REJECT
+
+
+# ============================================================
+# Fyber
+# ============================================================
+
+DOMAIN-SUFFIX,fyber.com,REJECT
+DOMAIN-SUFFIX,fyberedge.com,REJECT
+
+
+# ============================================================
+# Tapjoy
+# ============================================================
+
+DOMAIN-SUFFIX,tapjoy.com,REJECT
+
+
+# ============================================================
+# Adjust
+# ============================================================
+
+DOMAIN-SUFFIX,adjust.com,REJECT
+DOMAIN-SUFFIX,adjust.io,REJECT
+DOMAIN,app.adjust.com,REJECT
+DOMAIN,app.adjust.io,REJECT
+
+
+# ============================================================
+# AppsFlyer
+# ============================================================
+
+DOMAIN-SUFFIX,appsflyer.com,REJECT
+DOMAIN-SUFFIX,appsflyersdk.com,REJECT
+DOMAIN,attr.appsflyer.com,REJECT
+
+
+# ============================================================
+# Branch
+# ============================================================
+
+DOMAIN-SUFFIX,branch.io,REJECT
+DOMAIN,api.branch.io,REJECT
+
+
+# ============================================================
+# Kochava
+# ============================================================
+
+DOMAIN-SUFFIX,kochava.com,REJECT
+DOMAIN,control.kochava.com,REJECT
+
+
+# ============================================================
+# Singular
+# ============================================================
+
+DOMAIN-SUFFIX,singular.net,REJECT
+DOMAIN,s2s.singular.net,REJECT
+
+
+# ============================================================
+# Firebase Analytics
+# ============================================================
+
+DOMAIN,app-measurement.com,REJECT
+DOMAIN,firebaseinstallations.googleapis.com,REJECT
+DOMAIN,firebaselogging.googleapis.com,REJECT
+
+
+# ============================================================
+# Sentry
+# ============================================================
+
+DOMAIN-SUFFIX,sentry.io,REJECT
+DOMAIN,browser.sentry-cdn.com,REJECT
+DOMAIN,ingest.sentry.io,REJECT
+
+
+# ============================================================
+# New Relic
+# ============================================================
+
+DOMAIN-SUFFIX,newrelic.com,REJECT
+DOMAIN,bam.nr-data.net,REJECT
+DOMAIN,js-agent.newrelic.com,REJECT
+DOMAIN,bam-cell.nr-data.net,REJECT
+
+
+# ============================================================
+# Datadog
+# ============================================================
+
+DOMAIN-SUFFIX,datadoghq.com,REJECT
+DOMAIN,browser-intake-datadoghq.com,REJECT
+DOMAIN,rum.browser-intake-datadoghq.com,REJECT
+
+
+# ============================================================
+# LogRocket
+# ============================================================
+
+DOMAIN-SUFFIX,logrocket.com,REJECT
+DOMAIN-SUFFIX,logrocket.io,REJECT
+DOMAIN,r.lr-ingest.io,REJECT
+
+
+# ============================================================
+# Smartlook
+# ============================================================
+
+DOMAIN-SUFFIX,smartlook.com,REJECT
+DOMAIN,rec.smartlook.com,REJECT
+
+
+# ============================================================
+# Pendo
+# ============================================================
+
+DOMAIN-SUFFIX,pendo.io,REJECT
+
+
+# ============================================================
+# Drift
+# ============================================================
+
+DOMAIN-SUFFIX,drift.com,REJECT
+DOMAIN-SUFFIX,driftcdn.com,REJECT
+
+
+# ============================================================
+# HubSpot
+# ============================================================
+
+DOMAIN-SUFFIX,hs-analytics.net,REJECT
+DOMAIN-SUFFIX,hs-banner.com,REJECT
+DOMAIN-SUFFIX,hs-scripts.com,REJECT
+DOMAIN,track.hubspot.com,REJECT
+
+
+# ============================================================
+# Marketo
+# ============================================================
+
+DOMAIN-SUFFIX,marketo.com,REJECT
+DOMAIN-SUFFIX,mktoresp.com,REJECT
+
+
+# ============================================================
+# Salesforce Marketing Cloud
+# ============================================================
+
+DOMAIN-SUFFIX,exacttarget.com,REJECT
+DOMAIN-SUFFIX,marketingcloudapis.com,REJECT
+DOMAIN-SUFFIX,krxd.net,REJECT
+
+
+# ============================================================
+# Tealium
+# ============================================================
+
+DOMAIN-SUFFIX,tealiumiq.com,REJECT
+DOMAIN-SUFFIX,tealium.com,REJECT
+DOMAIN-SUFFIX,tiqcdn.com,REJECT
+
+
+# ============================================================
+# Snowplow
+# ============================================================
+
+DOMAIN-SUFFIX,snowplowanalytics.com,REJECT
+
+
+# ============================================================
+# Contentsquare
+# ============================================================
+
+DOMAIN-SUFFIX,contentsquare.com,REJECT
+DOMAIN-SUFFIX,contentsquare.net,REJECT
+
+
+# ============================================================
+# Decibel
+# ============================================================
+
+DOMAIN-SUFFIX,decibelinsight.com,REJECT
+
+
+# ============================================================
+# SessionCam
+# ============================================================
+
+DOMAIN-SUFFIX,sessioncam.com,REJECT
+
+
+# ============================================================
+# MouseStats
+# ============================================================
+
+DOMAIN-SUFFIX,mousestats.com,REJECT
+
+
+# ============================================================
+# VWO
+# ============================================================
+
+DOMAIN-SUFFIX,visualwebsiteoptimizer.com,REJECT
+DOMAIN-SUFFIX,vwo.com,REJECT
+
+
+# ============================================================
+# Optimizely
+# ============================================================
+
+DOMAIN-SUFFIX,optimizely.com,REJECT
+DOMAIN,cdn.optimizely.com,REJECT
+
+
+# ============================================================
+# Yandex
+# ============================================================
+
+DOMAIN,mc.yandex.ru,REJECT
+DOMAIN-SUFFIX,yandexadexchange.net,REJECT
+DOMAIN,an.yandex.ru,REJECT
+
+
+# ============================================================
+# VK / Mail.ru
+# ============================================================
+
+DOMAIN,top-fwz1.mail.ru,REJECT
+DOMAIN,ad.mail.ru,REJECT
+
+URL-REGEX,^https?:\/\/([^\/]+\.)?vk\.com\/rtrg(?:\/|\?),REJECT
+URL-REGEX,^https?:\/\/([^\/]+\.)?vk\.com\/ads(?:\/|\?),REJECT
+
+
+# ============================================================
+# LinkedIn
+# ============================================================
+
+DOMAIN,snap.licdn.com,REJECT
+DOMAIN,ads.linkedin.com,REJECT
+DOMAIN,px.ads.linkedin.com,REJECT
+
+
+# ============================================================
+# Pinterest
+# ============================================================
+
+DOMAIN,ct.pinterest.com,REJECT
+DOMAIN,log.pinterest.com,REJECT
+DOMAIN,ads.pinterest.com,REJECT
+
+
+# ============================================================
+# Snapchat
+# ============================================================
+
+DOMAIN,tr.snapchat.com,REJECT
+DOMAIN-SUFFIX,sc-static.net,REJECT
+DOMAIN-SUFFIX,snapads.com,REJECT
+
+
+# ============================================================
+# Reddit
+# ============================================================
+
+DOMAIN,events.reddit.com,REJECT
+DOMAIN,events.redditmedia.com,REJECT
+DOMAIN,alb.reddit.com,REJECT
+
+
+# ============================================================
+# Quora
+# ============================================================
+
+DOMAIN,pixel.quora.com,REJECT
+DOMAIN,q.quora.com,REJECT
+
+
+# ============================================================
+# Spotify
+# ============================================================
+
+DOMAIN,ads.spotify.com,REJECT
+DOMAIN,analytics.spotify.com,REJECT
+
+
+# ============================================================
+# Yahoo / Verizon / AOL Advertising
+# ============================================================
+
+DOMAIN,ads.yahoo.com,REJECT
+DOMAIN,analytics.yahoo.com,REJECT
+DOMAIN,geo.yahoo.com,REJECT
+DOMAIN-SUFFIX,advertising.com,REJECT
+DOMAIN-SUFFIX,atwola.com,REJECT
+DOMAIN-SUFFIX,yldbt.com,REJECT
+
+URL-REGEX,^https?:\/\/([^\/]+\.)?yahoo\.com\/ads(?:\/|\?),REJECT
+
+
+# ============================================================
+# GumGum
+# ============================================================
+
+DOMAIN-SUFFIX,gumgum.com,REJECT
+
+
+# ============================================================
+# Affiliate tracking
+# ============================================================
+
+DOMAIN-SUFFIX,shareasale.com,REJECT
+DOMAIN-SUFFIX,impact.com,REJECT
+DOMAIN-SUFFIX,impactradius.com,REJECT
+DOMAIN-SUFFIX,rakutenadvertising.com,REJECT
+DOMAIN-SUFFIX,linksynergy.com,REJECT
+DOMAIN-SUFFIX,anrdoezrs.net,REJECT
+DOMAIN-SUFFIX,dpbolvw.net,REJECT
+DOMAIN-SUFFIX,emjcd.com,REJECT
+DOMAIN-SUFFIX,jdoqocy.com,REJECT
+DOMAIN-SUFFIX,kqzyfj.com,REJECT
+DOMAIN-SUFFIX,awin1.com,REJECT
+DOMAIN-SUFFIX,awin.com,REJECT
+DOMAIN-SUFFIX,webgains.com,REJECT
+DOMAIN-SUFFIX,pepperjam.com,REJECT
+
+
+# ============================================================
+# Fingerprinting
+# ============================================================
+
+DOMAIN-SUFFIX,fingerprint.com,REJECT
+DOMAIN-SUFFIX,fpjs.io,REJECT
+DOMAIN-SUFFIX,fingerprintjs.com,REJECT
+
+
+# ============================================================
+# Push / notification tracking
+# ============================================================
+
+DOMAIN-SUFFIX,pushwoosh.com,REJECT
+DOMAIN-SUFFIX,onesignal.com,REJECT
+DOMAIN-SUFFIX,onesignal.org,REJECT
+DOMAIN,api.onesignal.com,REJECT
+DOMAIN,app.onesignal.com,REJECT
+
+
+# ============================================================
+# Customer engagement tracking
+# ============================================================
+
+DOMAIN-SUFFIX,customer.io,REJECT
+DOMAIN-SUFFIX,braze.com,REJECT
+DOMAIN-SUFFIX,appboy.com,REJECT
+DOMAIN-SUFFIX,iterable.com,REJECT
+DOMAIN-SUFFIX,klaviyo.com,REJECT
+
+
+# ============================================================
+# Chinese advertising / analytics
+# ============================================================
+
+DOMAIN,hm.baidu.com,REJECT
+DOMAIN,tongji.baidu.com,REJECT
+DOMAIN,cpro.baidu.com,REJECT
+DOMAIN,pos.baidu.com,REJECT
+DOMAIN-SUFFIX,cnzz.com,REJECT
+DOMAIN-SUFFIX,umeng.com,REJECT
+DOMAIN-SUFFIX,umengcloud.com,REJECT
+DOMAIN-SUFFIX,mmstat.com,REJECT
+DOMAIN,log.mmstat.com,REJECT
+DOMAIN,fourier.taobao.com,REJECT
+
+DOMAIN,pingjs.qq.com,REJECT
+DOMAIN,tcss.qq.com,REJECT
+DOMAIN,btrace.qq.com,REJECT
+DOMAIN,beacon.qq.com,REJECT
+DOMAIN,ad.qq.com,REJECT
+DOMAIN,gdt.qq.com,REJECT
+DOMAIN,tangram.e.qq.com,REJECT
+
+DOMAIN,log.jd.com,REJECT
+DOMAIN,ads-union.jd.com,REJECT
+DOMAIN,c-nfa.jd.com,REJECT
+
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN,pangolin.snssdk.com,REJECT
+DOMAIN,applog.uc.cn,REJECT
+DOMAIN,alog.umeng.com,REJECT
+
+
+# ============================================================
+# Huawei / Xiaomi / OPPO / Vivo telemetry
+# ============================================================
+
+DOMAIN,metrics.data.hicloud.com,REJECT
+DOMAIN,metrics1.data.hicloud.com,REJECT
+DOMAIN,data.mistat.xiaomi.com,REJECT
+DOMAIN,tracking.miui.com,REJECT
+DOMAIN,log.avlyun.com,REJECT
+DOMAIN,adsfs.oppomobile.com,REJECT
+DOMAIN,data.ads.oppomobile.com,REJECT
+DOMAIN,metrics.vivo.com.cn,REJECT
+
+
+# ============================================================
+# Generic advertising networks
+# ============================================================
+
+DOMAIN-SUFFIX,adskeeper.com,REJECT
+DOMAIN-SUFFIX,adkernel.com,REJECT
+DOMAIN-SUFFIX,adform.net,REJECT
+DOMAIN-SUFFIX,adform.com,REJECT
+DOMAIN-SUFFIX,bidvertiser.com,REJECT
+DOMAIN-SUFFIX,bidmachine.io,REJECT
+DOMAIN-SUFFIX,bidswitch.net,REJECT
+DOMAIN-SUFFIX,districtm.io,REJECT
+DOMAIN-SUFFIX,epom.com,REJECT
+DOMAIN-SUFFIX,exoclick.com,REJECT
+DOMAIN-SUFFIX,infolinks.com,REJECT
+DOMAIN-SUFFIX,medianet.com,REJECT
+DOMAIN-SUFFIX,mgid.com,REJECT
+DOMAIN-SUFFIX,nativo.com,REJECT
+DOMAIN-SUFFIX,popads.net,REJECT
+DOMAIN-SUFFIX,propellerads.com,REJECT
+DOMAIN-SUFFIX,revcontent.com,REJECT
+DOMAIN-SUFFIX,revjet.com,REJECT
+DOMAIN-SUFFIX,sekindo.com,REJECT
+DOMAIN-SUFFIX,smartadserver.com,REJECT
+DOMAIN-SUFFIX,smaato.net,REJECT
+DOMAIN-SUFFIX,smaato.com,REJECT
+DOMAIN-SUFFIX,startapp.com,REJECT
+DOMAIN-SUFFIX,trafficjunky.com,REJECT
+DOMAIN-SUFFIX,undertone.com,REJECT
+
+
+# ============================================================
+# Common tracking parameters
+# Shadowrocket cannot reliably perform AdGuard's $removeparam
+# operation, so these are intentionally handled in adguard.txt.
+# ============================================================
+
+# ============================================================
+# End
+# ============================================================
